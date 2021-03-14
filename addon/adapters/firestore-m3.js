@@ -158,7 +158,7 @@ function _getAndSubscribe(ref, store) {
         } else {
           let local = store.peekRecord(doc.data.type, doc.data.id);
 
-          if (local && local.isDirty) {
+          if (local && (local.isDirty || local.isSaving)) {
             // If it's dirty, then we either have just saved and are waiting
             // for those changes to be synced to the server, OR we have changes
             // coming from the server and we need to renconcile them. In the
