@@ -15,7 +15,9 @@ export function getRelated(model) {
   let promises = [];
 
   for (let key in related) {
-    let promise = model.store.query(key, { where: [DOC_ID, 'in', related[key]] });
+    let promise = model.store.query(key, {
+      where: [DOC_ID, 'in', related[key]],
+    });
     promises.push(promise);
   }
 

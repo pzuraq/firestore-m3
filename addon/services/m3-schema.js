@@ -1,7 +1,7 @@
 import DefaultSchema from 'ember-m3/services/m3-schema';
 import { isModelReference } from '../utils/reference';
 
-export default DefaultSchema.extend({
+export default {
   /**
    * Determines whether an attribute is a reference.
    * If it is not, return `null` or `undefined`.
@@ -98,4 +98,4 @@ export default DefaultSchema.extend({
     }
   }
     */
-});
+};
