@@ -1,4 +1,3 @@
-import DefaultSchema from 'ember-m3/services/m3-schema';
 import { isModelReference } from '../utils/reference';
 
 export default {
