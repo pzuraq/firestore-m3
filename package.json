@@ -1,7 +1,7 @@
 {
-  "name": "firestore-m3",
+  "name": "@now-ims/ember-jetfuel",
   "version": "0.1.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember add-on for Firebase",
   "keywords": [
     "ember-addon"
   ],
