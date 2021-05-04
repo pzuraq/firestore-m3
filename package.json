@@ -1,7 +1,7 @@
 {
-  "name": "firestore-m3",
+  "name": "ember-firebase",
   "version": "0.1.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember add-on for Firebase",
   "keywords": [
     "ember-addon"
   ],
@@ -32,7 +32,7 @@
     "ember-auto-import": "^1.10.1",
     "ember-cli-babel": "^7.23.1",
     "ember-cli-htmlbars": "^5.3.2",
-    "firebase": "^8.2.9"
+    "firebase": "^9.0.0-beta.1"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",

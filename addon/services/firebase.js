@@ -1,6 +1,7 @@
-import Firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import Firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
+import 'firebase/compat/storage';
 import Service from '@ember/service';
 
 export default class FirebaseService extends Service {
@@ -18,6 +19,8 @@ export default class FirebaseService extends Service {
     this.config = config.firebase;
     this.app = null;
     this.db = null;
+    this.auth = null;
+    this.storage = null;
     this.connect();
   }
 
@@ -35,6 +38,8 @@ export default class FirebaseService extends Service {
 
     this.app = app;
     let db = (this.db = app.firestore());
+    this.auth = app.auth();
+    this.storage = app.storage();
 
     this.readyPromise = db
       .enablePersistence({ synchronizeTabs: true })

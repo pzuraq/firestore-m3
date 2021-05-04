@@ -1,7 +1,7 @@
-firestore-m3
+ember-jetfuel
 ==============================================================================
 
-[Short description of the addon.]
+Combine the power of Ember with Firebase to propel your projects 
 
 
 Compatibility
